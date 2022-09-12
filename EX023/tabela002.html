@@ -14,6 +14,13 @@
             width: 500px;
             border-collapse: collapse;
         }
+
+        caption {
+            font-size: 1,5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         
         td, th {
             border: 1px solid black;
@@ -21,8 +28,12 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(67, 65, 65);
             color: white;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -33,6 +44,7 @@
 <body>
     <h1>Tabelas grandes</h1>
     <table>
+        <caption>População de 3 estados</caption>
         <thead>
             <tr>
                 <th>Estado</th>
